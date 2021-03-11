@@ -17,10 +17,9 @@ I wanted a simple way to lint my Java projects. Other Checkstyle actions used `r
 
 ```bash
 [WARN] /batches/BuyBatch.java:82:5: 'method def rcurly' has incorrect indentation level 4, expected level should be 2. [Indentation]
-87
 [WARN] /shipments/CreateShipment.java:8:1: Extra separation in import group before 'com.easypost.EasyPost' [CustomImportOrder]
-88
 [WARN] /shipments/CreateShipment.java:8:1: Wrong lexicographical order for 'com.easypost.EasyPost' import. Should be before 'java.util.Map'. [CustomImportOrder]
+...
 ```
 
 ## Usage
