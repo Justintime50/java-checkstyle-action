@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v0.2.2 (2021-03-10)
+
+* Fixed a bug for checking the exit code
+
 ## v0.2.1 (2021-03-10)
 
 * Corrects order of operations in Dockerfile and locations in script
