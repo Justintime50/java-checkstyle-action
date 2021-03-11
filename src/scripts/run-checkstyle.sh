@@ -1,12 +1,14 @@
 #!/bin/bash
 
-CHECKSTYLE_JAR="checkstyle-8.41-all.jar"
-CONFIG_FILE=${2:-"google_checks.xml"}
 WORKING_DIR=${1:=""}
+CONFIG_FILE=${2:-"google_checks.xml"}
 
 main() {
-    # Recursively run Checkstyle on the following directory
-    java -jar /checkstyle/bin/"$CHECKSTYLE_JAR" -c /checkstyle/config/"$CONFIG_FILE" /github/workspace/"$WORKING_DIR"
+    echo "Running Checkstyle..."
+    if java -jar /checkstyle/bin/checkstyle.jar /github/workspace/"$WORKING_DIR" -c /checkstyle/config/"$CONFIG_FILE" | grep -q 'WARN' || 'ERROR'; then
+        echo "Warnings or errors found in your code!"
+        exit 1
+    fi
 }
 
 main

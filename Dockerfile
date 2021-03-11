@@ -1,6 +1,8 @@
-FROM openjdk:15.0-slim
+FROM openjdk:15-alpine
 
-COPY ./src/bin /checkstyle/bin
+ARG CHECKSTYLE_VERSION=8.41
+RUN wget -O - -q https://github.com/checkstyle/checkstyle/releases/download/checkstyle-${CHECKSTYLE_VERSION}/checkstyle-${CHECKSTYLE_VERSION}-all.jar > /checkstyle/bin/checkstyle.jar
+
 COPY ./src/config /checkstyle/config
 COPY ./src/scripts/run-checkstyle.sh /checkstyle/run-checkstyle.sh
 

@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v0.2.0 (2021-03-10)
+
+* Removed jar from the repo and will instead download it as part of the Dockerfile build
+* Step should now fail if `WARN` or `ERROR` is returned from the check
+* Switched from `slim` to `alpine` image
+* Refactored script to be easier to read
+
 ## v0.1.4 (2021-03-10)
 
 * Made `directory` not required and will assume the root directory when not present
