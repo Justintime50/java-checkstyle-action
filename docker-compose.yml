@@ -1,0 +1,4 @@
+services:
+  java-checkstyle:
+    container_name: java-checkstyle
+    build: .

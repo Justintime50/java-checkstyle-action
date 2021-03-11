@@ -1,6 +1,12 @@
 # CHANGELOG
 
-## v0.2.2 (2021-03-10)
+## v0.2.3 (2021-03-11)
+
+* Switches back from `alpine` image to `slim` image
+* Fixes bug that wasn't properly downloading jar file
+* Adds `Docker` step to build
+
+## v0.2.2 (2021-03-11)
 
 * Fixed a bug for checking the exit code
 

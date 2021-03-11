@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WORKING_DIR=${1:=""}
+WORKING_DIR=${1:-""}
 CONFIG_FILE=${2:-"google_checks.xml"}
 
 main() {
