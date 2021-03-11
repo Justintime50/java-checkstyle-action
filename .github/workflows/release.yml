@@ -1,0 +1,22 @@
+name: release
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: "0"
+      - name: Update stable git tag
+        run: |
+          git tag --force $STABLE_TAG ${GITHUB_REF##*/}
+          git push origin --delete $STABLE_TAG
+          git push origin $STABLE_TAG
+        env:
+          STABLE_TAG: v1

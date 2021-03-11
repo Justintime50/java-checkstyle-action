@@ -1,0 +1,18 @@
+name: "Java Checkstyle"
+description: "Release scripts, binaries, and executables directly to Homebrew via GitHub Actions."
+branding:
+  icon: "edit-2"
+  color: "red"
+inputs:
+  directory:
+    description: "The directory to run Checkstyle recursively on."
+    required: true
+  config_file:
+    description: "The name of the config file to be used, either 'sun_checks.xml' or 'google_checks.xml'."
+    required: false
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.directory }}
+    - ${{ inputs.config_file }}
