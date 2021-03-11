@@ -2,7 +2,7 @@
 
 # Java Checkstyle GitHub Action
 
-Run Java Checkstyle in a command line context via GitHub Actions.
+Run [Java Checkstyle](https://github.com/checkstyle/checkstyle) in a command line context via GitHub Actions.
 
 [![Build](https://github.com/Justintime50/java-checkstyle-action/workflows/build/badge.svg)](https://github.com/Justintime50/java-checkstyle-action/actions)
 [![Licence](https://img.shields.io/github/license/Justintime50/java-checkstyle-action)](LICENSE)

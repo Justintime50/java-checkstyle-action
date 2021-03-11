@@ -1,4 +1,4 @@
-name: "Java Checkstyle"
+name: "Java Checkstyle Action"
 description: "Release scripts, binaries, and executables directly to Homebrew via GitHub Actions."
 branding:
   icon: "edit-2"
