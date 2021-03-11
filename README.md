@@ -15,8 +15,6 @@ I wanted a simple way to lint my Java projects. Other Checkstyle actions used `r
 
 ## Usage
 
-### GitHub Actions YML
-
 ```yml
 name: checkstyle
 
@@ -27,6 +25,8 @@ jobs:
     runs-on: ubuntu-latest
     name: java-checkstyle
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
       - name: Run Java Checkstyle
         uses: Justintime50/java-checkstyle-action@v1
         with:
@@ -37,13 +37,6 @@ jobs:
           # The name of the config file to be used, either 'sun_checks.xml' or 'google_checks.xml'.
           # Default is shown.
           config_file: google_checks.xml
-```
-
-### Run Manually
-
-```bash
-# Script, directory, config_file
-./run-checkstyle.sh /path/to/dir/to/lint sun_checks.xml
 ```
 
 ## Development
