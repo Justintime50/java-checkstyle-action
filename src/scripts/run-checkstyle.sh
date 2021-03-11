@@ -6,7 +6,7 @@ WORKING_DIR=${1:=""}
 
 main() {
     # Recursively run Checkstyle on the following directory
-    java -jar bin/"$CHECKSTYLE_JAR" -c config/"$CONFIG_FILE" /github/workspace/"$WORKING_DIR"
+    java -jar /checkstyle/bin/"$CHECKSTYLE_JAR" -c /checkstyle/config/"$CONFIG_FILE" /github/workspace/"$WORKING_DIR"
 }
 
 main
