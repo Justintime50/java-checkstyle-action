@@ -6,7 +6,7 @@ branding:
 inputs:
   directory:
     description: "The directory to run Checkstyle recursively on."
-    required: true
+    required: false
   config_file:
     description: "The name of the config file to be used, either 'sun_checks.xml' or 'google_checks.xml'."
     required: false

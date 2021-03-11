@@ -31,7 +31,7 @@ jobs:
         uses: Justintime50/java-checkstyle-action@v1
         with:
           # The directory to run Checkstyle recursively on.
-          # Required.
+          # Default is the root of your project.
           directory: /path/to/dir
 
           # The name of the config file to be used, either 'sun_checks.xml' or 'google_checks.xml'.

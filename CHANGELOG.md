@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## v0.1.1 & v0.1.2 (2021-03-10)
+## v0.1.1-v0.1.3 (2021-03-10)
 
 * Bug fix for `WORKDIR` in Dockerfile
 
