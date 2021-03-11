@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     # Install curl
     curl \
     # Download the checkstyle.jar file
-    && curl -LJ https://github.com/checkstyle/checkstyle/releases/download/checkstyle-${CHECKSTYLE_VERSION}/checkstyle-${CHECKSTYLE_VERSION}-all.jar > /checkstyle/checkstyle.jar \
+    && curl -LJs https://github.com/checkstyle/checkstyle/releases/download/checkstyle-${CHECKSTYLE_VERSION}/checkstyle-${CHECKSTYLE_VERSION}-all.jar > /checkstyle/checkstyle.jar \
     # Clean up
     && rm -rf /var/lib/apt/lists/*
 
