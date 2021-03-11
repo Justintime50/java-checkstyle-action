@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v0.2.1 (2021-03-10)
+
+* Corrects order of operations in Dockerfile and locations in script
+
 ## v0.2.0 (2021-03-10)
 
 * Removed jar from the repo and will instead download it as part of the Dockerfile build
