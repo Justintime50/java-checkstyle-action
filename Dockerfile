@@ -2,7 +2,7 @@ FROM openjdk:15-slim
 
 ARG CHECKSTYLE_VERSION=8.41
 
-COPY ./src/config /checkstyle/config
+COPY ./src/style-suites /checkstyle/style-suites
 COPY ./src/scripts/run-checkstyle.sh /checkstyle/run-checkstyle.sh
 
 # hadolint ignore=DL3008

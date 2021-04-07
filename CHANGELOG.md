@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v0.3.0 (2021-04-07)
+
+* Changes `config_file` input key to `style_suite`
+* Adds validation on the style suite input
+
 ## v0.2.3 (2021-03-11)
 
 * Switches back from `alpine` image to `slim` image

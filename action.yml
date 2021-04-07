@@ -7,12 +7,12 @@ inputs:
   directory:
     description: "The directory to run Checkstyle recursively on."
     required: false
-  config_file:
-    description: "The name of the config file to be used, either 'sun_checks.xml' or 'google_checks.xml'."
+  style_suite:
+    description: "The name of the style suite to be used, either 'sun' or 'google'."
     required: false
 runs:
   using: "docker"
   image: "Dockerfile"
   args:
     - ${{ inputs.directory }}
-    - ${{ inputs.config_file }}
+    - ${{ inputs.style_suite }}
