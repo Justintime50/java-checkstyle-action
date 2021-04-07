@@ -60,4 +60,4 @@ hadolint Dockerfile
 ## Attribution
 
 * Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-* [Suite Styles](https://github.com/checkstyle/checkstyle/tree/master/src/main/resources)
+* [Style Suites](https://github.com/checkstyle/checkstyle/tree/master/src/main/resources)
