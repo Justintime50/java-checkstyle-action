@@ -19,7 +19,10 @@ I wanted a simple way to lint my Java projects. Other Checkstyle actions used `r
 [WARN] /batches/BuyBatch.java:82:5: 'method def rcurly' has incorrect indentation level 4, expected level should be 2. [Indentation]
 [WARN] /shipments/CreateShipment.java:8:1: Extra separation in import group before 'com.easypost.EasyPost' [CustomImportOrder]
 [WARN] /shipments/CreateShipment.java:8:1: Wrong lexicographical order for 'com.easypost.EasyPost' import. Should be before 'java.util.Map'. [CustomImportOrder]
-...
+
+Audit done.
+
+Warnings or errors found in your code!
 ```
 
 ## Usage
@@ -51,7 +54,7 @@ jobs:
 
 ```bash
 # Lint the script
-shellcheck src/scripts/run-checkstyle.sh
+shellcheck src/scripts/*.sh
 
 # Lint the Dockerfile
 hadolint Dockerfile

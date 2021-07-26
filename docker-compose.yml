@@ -2,3 +2,6 @@ services:
   java-checkstyle:
     container_name: java-checkstyle
     build: .
+    environment: 
+      - INPUT_DIRECTORY=/github/workspace/
+      - INPUT_STYLE_SUITE=google

@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.3.1 (2021-07-28)
+
+* Pins `curl` to v7 in Dockerfile
+* Adds `download-suites` script to easily update rulesets in the future
+* Adds some convenience variables in `docker-compose` file
+
 ## v0.3.0 (2021-04-07)
 
 * Changes `config_file` input key to `style_suite`
